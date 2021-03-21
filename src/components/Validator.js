@@ -15,7 +15,14 @@ const Validator = ({children, ...props}) => {
   })
 
   const validate = () => {
-
+     // if validate method was called at parent component(prevents a cascade reaction)
+     if(!props.callFromParent) {
+     
+      // initiate execution validate method at child component
+      setCallFromParent(true)
+      return
+    }   
+   
   }
 
   return(
