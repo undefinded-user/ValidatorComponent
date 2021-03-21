@@ -10,9 +10,9 @@ const Validator = ({children, level, ...props}) => {
   const [callFromParent, setCallFromParent] = useState(false)
   // UI marks
   const [info, setInfo] = useState('')
-  const [isParent, setIsParent] = useState(findAllByDisplayValue)
+  const [isParent, setIsParent] = useState(false)
   // call child method if parent method was executed
-  const useEffect(()=>{
+  useEffect(()=>{
     props.callFromParent&&validate()
   })
 
@@ -59,7 +59,7 @@ const Validator = ({children, level, ...props}) => {
   return(
     <div>
       <p>{level} Level Validate Component</p>
-      {info&&<p className={isParent? 'dangerous-info' : 'info'}>{info}</p>}
+      {info&&<p className={isParent? 'info dang' : 'info'}>{info}</p>}
       <button className='btn' onClick={validate}>Validate</button>
       <div className='nested'>
         {childrenWithProps}
