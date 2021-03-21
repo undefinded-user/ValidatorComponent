@@ -12,6 +12,7 @@ Validator component emplements next logic:
 1. Validate method
 2. When it is called. Validate method is automatically executed at first level nested Validator components
 3. Any nested levels are avalible
+4. Any intermediate component should pass all properties down to the three
 
 ## Logic expamples
 
