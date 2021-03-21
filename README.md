@@ -16,19 +16,18 @@ Validator component emplements next logic:
 
 ## Logic expamples
 
-  <!-- 1 --> <Validator-component>
-
-    <!-- 2 --><Validator-component> </Validator-component>
-    <Some-component>
-      <!-- 3 --><Validator-component>
-        <!-- 4 --><Validator-component>
-        </Validator-component>
-      </Validator-component>
-    </Some-component>
-    <!-- 5 --><Validator-component>
-    </Validator-component>
-
-  </Validator-component>
+    <!-- 1 --> <Validator-component>
+        <!-- 2 --><Validator-component>
+                  </Validator-component>
+                  <Some-component>
+           <!-- 3 --><Validator-component>
+              <!-- 4 --><Validator-component>
+                        </Validator-component>
+                     </Validator-component>
+                  </Some-component>
+        <!-- 5 --><Validator-component>
+                  </Validator-component>
+              </Validator-component>
 
 1. When we call validate method at component 1. Validate method will be automatically executed at 2, 3, 5 components
 2. When we call validate method at component 2. Validate method will be automatically executed at component 4
