@@ -1,0 +1,27 @@
+.nested {
+  padding: 0 2em;
+}
+
+.btn {
+  padding: 0.2em 0.4em;
+  font-weight: bold;
+  border: none;
+  background-color: rgba(197, 206, 214, 0.418);
+}
+
+.btn:focus,
+.btn:hover {
+  outline: none;
+  border: solid 2px darkblue;
+  transform: scale(1.2);
+}
+
+.info {
+  color: white;
+  background-color: rgba(33, 141, 29, 0.87);
+  padding: 0.2em 0.4em;
+}
+
+.dang {
+  background-color: rgba(161, 34, 44, 0.87);
+}
